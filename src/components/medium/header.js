@@ -11,12 +11,12 @@ export default class Header extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu inverted borderless color="yellow">
+      <Menu inverted className='Yellow-header' borderless color='yellow' >
         <Menu.Menu>
-        <Menu.Item className='Menu-left-header' name='Fahri' />
+        <Menu.Item className='Menu-left-header' as='h1' name='FAHRI' />
       </Menu.Menu>
       <Menu.Menu >
-        <Menu.Item className='Menu-right-header' name='About Me' active={activeItem === 'About Me'} onClick={this.handleItemClick} />
+        <Menu.Item className='Menu-right-header' name='Home' active={activeItem === 'Home'} onClick={this.handleItemClick} />
         <Menu.Item name='Skill' active={activeItem === 'Skill'} onClick={this.handleItemClick} />
         <Menu.Item name='Education' active={activeItem === 'Education'} onClick={this.handleItemClick} />
         <Menu.Item name='Portofolio' active={activeItem === 'Portofolio'} onClick={this.handleItemClick} />

@@ -14,12 +14,16 @@
   color: white;
 }
 
+.Resume-button {
+  width: 300px;
+}
+
 .Menu-left-header {
   margin-left: 35px;
 }
 
 .Menu-right-header {
-  margin-left: 762px;
+  margin-left: 700px;
 }
 
 .App-title {
