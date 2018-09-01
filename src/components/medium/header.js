@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 import '../../App.css';
 
+
 export default class Header extends Component {
   state = { activeItem: '1' }
 
@@ -11,9 +12,9 @@ export default class Header extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu inverted className='Yellow-header' borderless color='yellow' >
+      <Menu inverted borderless color='teal' >
         <Menu.Menu>
-        <Menu.Item className='Menu-left-header' as='h1' name='FAHRI' />
+        <Menu.Item className='Menu-left-header' as='h3' name='FAHRI' />
       </Menu.Menu>
       <Menu.Menu >
         <Menu.Item className='Menu-right-header' name='Home' active={activeItem === 'Home'} onClick={this.handleItemClick} />
